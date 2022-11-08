@@ -1,5 +1,5 @@
 // Implementing the remote interface 
-public class AddImpl implements RMIAdd {  
+public class MathImpl implements RMIMath {  
    
    // Implementing the interface method 
    public void add(int a, int b) {

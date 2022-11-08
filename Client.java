@@ -10,7 +10,7 @@ public class Client {
          Registry registry = LocateRegistry.getRegistry(null); 
     
          // Looking up the registry for the remote object 
-         RMIAdd stub = (RMIAdd) registry.lookup("RMIAdd");
+         RMIMath stub = (RMIMath) registry.lookup("RMIMath");
     
          // Calling the remote method using the obtained object 
         
@@ -58,7 +58,9 @@ public class Client {
             default:
                 System.out.println("Invalid choice");
          
-      } catch (Exception e) {
+      }
+      }
+      catch (Exception e) {
          System.err.println("Client exception: " + e.toString()); 
          e.printStackTrace(); 
       } 
