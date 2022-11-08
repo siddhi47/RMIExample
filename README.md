@@ -1,6 +1,6 @@
 ## Java RMI
 
-This is a simple example of JAVA RMI for adding two numbers. This code works on Java 8.
+This is a simple example of JAVA RMI for mathematical operations between two numbers. This code works on Java 8.
 
 Please use <a href = 'https://sdkman.io/usage'>sdkman</a> to install and setup the java 8.
 
