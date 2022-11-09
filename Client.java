@@ -1,7 +1,7 @@
 import java.rmi.registry.LocateRegistry; 
 import java.rmi.registry.Registry;  
 import java.util.Scanner;
-
+import java.math.*;
 public class Client {  
    private Client() {}  
    public static void main(String[] args) {  
@@ -17,8 +17,8 @@ public class Client {
         // get two numbers from the uses
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter two numbers: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        BigInteger a = sc.nextBigInteger();
+        BigInteger b = sc.nextBigInteger();
 
         // input type of operation
         System.out.println("Enter the type of operation: ");
