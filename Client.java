@@ -29,31 +29,36 @@ public class Client {
         System.out.println("5. LCM");
         System.out.println("6. GCD");
         int choice = sc.nextInt();
-
         sc.close();
         
+        BigInteger res = new BigInteger("0");
         // perform the operation
         // switch case to perform the operation
         // call the remote method
         // print the result
         switch(choice) {
             case 1:
-                stub.add(a, b);
+                res = stub.add(a, b);
+                System.out.println("Addition of two numbers is: " + res);
                 break;
             case 2:
-                stub.subtract(a, b);
+                res = stub.subtract(a, b);
+                System.out.println("Subtraction of two numbers is: " + res);
                 break;
             case 3:
-                stub.multiply(a, b);
-                break;
+                res = stub.multiply(a, b);
+                System.out.println("Multiplication of two numbers is: " + res);
             case 4:
-                stub.divide(a, b);
-                break;
+                res = stub.divide(a, b);
+                System.out.println("Division of two numbers is: " + res);
+
             case 5:
-                stub.LCM(a, b);
+                res = stub.LCM(a, b);
+                System.out.println("LCM of two numbers is: " + res);
                 break;
             case 6:
-                stub.GCD(a, b);
+                res = stub.GCD(a, b);
+                System.out.println("GCD of two numbers is: " + res);
                 break;
             default:
                 System.out.println("Invalid choice");
