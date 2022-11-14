@@ -48,10 +48,11 @@ public class Client {
             case 3:
                 res = stub.multiply(a, b);
                 System.out.println("Multiplication of two numbers is: " + res);
+                break;
             case 4:
                 res = stub.divide(a, b);
                 System.out.println("Division of two numbers is: " + res);
-
+                break;
             case 5:
                 res = stub.LCM(a, b);
                 System.out.println("LCM of two numbers is: " + res);
@@ -62,6 +63,7 @@ public class Client {
                 break;
             default:
                 System.out.println("Invalid choice");
+                break;
          
       }
       }
